@@ -1,9 +1,5 @@
 package com.methodindustries.problems;
 
-/**
- * Hello world!
- *
- */
 public class Day02 {
 	 public static String run(char[] s) {
 		 int t=0;

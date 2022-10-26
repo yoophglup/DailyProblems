@@ -2,7 +2,7 @@ package com.methodindustries.problems;
 
 import java.util.HashMap;
 
-public class W2Day01 {
+public class Day06 {
 	public static int romanToInt(String s) {
 		
 	    HashMap<Character, Integer> RomanNumeral = new HashMap<Character, Integer>();

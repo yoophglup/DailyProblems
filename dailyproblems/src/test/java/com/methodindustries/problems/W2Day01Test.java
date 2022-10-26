@@ -9,9 +9,9 @@ public class W2Day01Test {
 	    public void testexamples()
 	    {
 	 
-	    	assertEquals(W2Day01.romanToInt("MDCLXVI"), 1666);
-	    	assertEquals(W2Day01.romanToInt("CDXLIV"), 444);
-	    	assertEquals(W2Day01.romanToInt("CMXCIX"), 999);
+	    	assertEquals(Day06.romanToInt("MDCLXVI"), 1666);
+	    	assertEquals(Day06.romanToInt("CDXLIV"), 444);
+	    	assertEquals(Day06.romanToInt("CMXCIX"), 999);
 
 	    }
 	    

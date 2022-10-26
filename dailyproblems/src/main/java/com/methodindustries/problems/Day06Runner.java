@@ -1,6 +1,6 @@
 package com.methodindustries.problems;
 
-public class W2Day01Runner {
+public class Day06Runner {
 	public static void main(String args[]) {
 	
 		// Symbol       Value
@@ -28,7 +28,7 @@ public class W2Day01Runner {
 		
 		
 		
-	System.out.print(	W2Day01.romanToInt("CDXLIV"));
+	System.out.print(	Day06.romanToInt("CDXLIV"));
 	
 	}
 }

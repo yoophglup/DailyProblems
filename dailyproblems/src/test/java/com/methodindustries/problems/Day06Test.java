@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class W2Day01Test {
+public class Day06Test {
 	    @Test
 	    public void testexamples()
 	    {

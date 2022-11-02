@@ -6,8 +6,7 @@ public class Day08 {
     		if (words.indexOf(ch)==words.lastIndexOf(ch)) {
     			return words.indexOf(ch);
     		}
-	
-    		
+   		
     	}
 
 		return -1;

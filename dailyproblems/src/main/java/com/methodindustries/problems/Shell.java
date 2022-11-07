@@ -8,6 +8,8 @@ public class Shell {
 	    System.out.println(capitalCities.get("Austin")); 	    
 	    for (String i : capitalCities.keySet()) {
 	    	System.out.println(i);
+	    	int main=0;
+	    	System.out.println(main);
 	    	
 	    }
 	    

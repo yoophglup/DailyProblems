@@ -24,18 +24,17 @@ import java.util.Arrays;
 
 
 
-public class Day03Runner {
+public class Day03bRunner {
 	public static void main(String args[]) {
 
- 		int[] nums= {0,1,2,3,4,5,6,7};
- 		int target=6;
- 		
- 		int Indexresults[]= (TwoSum.run(nums,target));
+ 		int[] nums= {3,4,5,6,7};
+ 		int target=7;		
+ 		int Indexresults[]= BetterTwoSum.run(nums,target);
  		System.out.println(Arrays.toString(nums));
  		System.out.println("What two numbers total to : "+target);
- 		System.out.println(""+Indexresults[0]+" "+Indexresults[1]);
+ 		System.out.println("The values at "+Indexresults[0]+" and "+Indexresults[1]);
+ 		System.out.println("Which are "+nums[Indexresults[0]]+" and "+nums[Indexresults[1]]);
  		
-		
 	}
 
 }

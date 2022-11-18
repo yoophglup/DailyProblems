@@ -11,7 +11,6 @@ public class Day04 {
 	    			returnvalue+=Sarray[i];
 	    		}else {
 		    		returnvalue+=Sarray[i] + " ";
-
 	    		}
 	    	}
 	    	System.out.println(returnvalue);

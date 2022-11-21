@@ -1,10 +1,11 @@
 package com.methodindustries.problems;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 
 public class Day07Hashmap {
     public static int singleNumber(int[] nums) {
-	    HashMap<Integer, Integer> IntBank = new HashMap<Integer, Integer>();
+	    Hashtable<Integer, Integer> IntBank = new Hashtable<Integer, Integer>();
     	int ct=0;    	
     	for (int x : nums) {
     		if (IntBank.containsKey(x)) {

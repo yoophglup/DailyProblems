@@ -1,6 +1,5 @@
 package com.methodindustries.problems;
 
-
 //Given the head of a singly linked list, reverse the list, and return
 //the reversed list.
 
@@ -16,8 +15,6 @@ package com.methodindustries.problems;
 //Input: head = []
 //Output: []
 
-
-
 /**
 * Definition for singly-linked list.
 * public class ListNode {
@@ -32,11 +29,19 @@ package com.methodindustries.problems;
 
 public class Day13Runner {
 	public static void main(String args[]) {
-		ListNode listnode = new ListNode(5);
-		listnode=new ListNode(4,listnode);
-		listnode=new ListNode(3,listnode);
-		listnode=new ListNode(2,listnode);
-		listnode=new ListNode(1,listnode);
-		Day13.reverseSingly(listnode);
+		ListNode listnode5 = new ListNode(1,null);
+		ListNode listnode4 = new ListNode(2,listnode5);
+		ListNode listnode3 = new ListNode(3,listnode4);
+		ListNode listnode2 = new ListNode(4,listnode3);
+		ListNode listnode1 = new ListNode(5,listnode2);
+
+		
+		listnode1.display(listnode1);		
+		listnode1=listnode1.reverseList(listnode1);
+		listnode1.display(listnode1);		
+		listnode1=listnode1.recursiveReverse(listnode1);
+		listnode1.display(listnode1);		
+
+		
 	}
 }

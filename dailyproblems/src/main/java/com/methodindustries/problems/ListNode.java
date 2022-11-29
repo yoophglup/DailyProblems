@@ -1,7 +1,7 @@
 package com.methodindustries.problems;
 
-	
-	  public class ListNode {
+
+public class ListNode {
 	      int val;
 	      ListNode next;
 	      ListNode() {}
@@ -25,25 +25,31 @@ package com.methodindustries.problems;
 	    	  	  }
 	    	  	  System.out.println("End]");
 	      }    
-	              	    	  
-	      public void reverseList(ListNode th) {
-	    	  ListNode pointer=th;
+	           
+	      public ListNode reverseList(ListNode th) {
 	    	  ListNode prev=null;
-	    	  ListNode next=th.next;
-	    	  ListNode current=th;
-    	  	  while (pointer != null) {
-    	  		  
-    	  		 System.out.println(pointer.val);
-    	  		 prev=current;
-    	  		 current=pointer;
-    	  		 current.next=prev;
-    	  		 pointer=pointer.next;
-    	  		 
-    	  		 
-    	  		 
-    	  		 
+	    	  ListNode next=null;
+	    	  ListNode current=th;	    	  
+    	  	  while (current != null) {
+    	  		  next = current.next;
+    	  		  current.next = prev;
+    	  		  prev = current;
+    	  		  current=next; 	  		 
     	  	  }
-
+    	  	  th=prev;
+    	  	  return th;
+	      }
+	      
+	      public ListNode recursiveReverse(ListNode th) {
+	    	    {
+	    	        if (th == null || th.next == null)
+	    	            return th;	    	
+	    	        ListNode rest = recursiveReverse(th.next);
+	    	        th.next.next = th;	    	 
+	    	        th.next = null;	    	 
+	    	        return rest;
+	    	    }
+	    	 
 	      }
 }
 	  	
